@@ -2,8 +2,6 @@
 # Date  : 4/01/2021
 # Description: Script asks a user to enter an amount in cents less than a dollar, then returns how much change this value equates to.
 
-temp = 0
-
 print("Please enter an amount in cents less than a dollar.")
 
 user_input = int(input())
@@ -16,13 +14,10 @@ the value of temp will be adjusted 4 times.
 
 quarters = user_input // 25
 temp = user_input - (quarters * 25)
-
 dimes = temp // 10
 temp = temp - (dimes * 10)
-
 nickels = temp // 5
 temp = temp - (nickels * 5)
-
 pennies = temp // 1
 
 # Values of coins needs to be converted into string type for concatenation
